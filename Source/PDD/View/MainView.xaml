@@ -1,0 +1,21 @@
+﻿<Window x:Class="PDD.Client.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Click="PassExam_OnClick" Name="PassExam" Content="Сдать экзамен" Grid.Row="1" Grid.Column="1" ></Button>
+        <Button Click="AddQuestion_OnClick" Name="AddQuestion" Content="Добавить вопросы" Grid.Row="3" Grid.Column="1" CommandParameter="QuestionCard.xaml"></Button>
+    </Grid>
+</Window>
