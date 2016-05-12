@@ -1,8 +1,7 @@
 ﻿namespace PDD.DataModel.Entity
 {
-    public class TestResultItem
+    public class TestResultItem : Entity
     {
-        public int Id { get; set; }
         public int? QuestionID { get; set; }
         public virtual Question Question { get; set; }
         public int? AnswerId { get; set; }

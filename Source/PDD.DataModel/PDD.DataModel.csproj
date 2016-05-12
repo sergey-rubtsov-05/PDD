@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Answer.cs" />
+    <Compile Include="Entity\Entity.cs" />
     <Compile Include="Entity\Person.cs" />
     <Compile Include="Entity\Question.cs" />
     <Compile Include="Entity\Test.cs" />

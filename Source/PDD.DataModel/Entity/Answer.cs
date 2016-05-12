@@ -1,10 +1,7 @@
-﻿using System;
-
-namespace PDD.DataModel.Entity
+﻿namespace PDD.DataModel.Entity
 {
-    public class Answer
+    public class Answer : Entity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public int QuestionId { get; set; }
         public virtual Question Question { get; set; }

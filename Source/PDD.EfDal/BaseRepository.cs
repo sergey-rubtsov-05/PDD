@@ -1,12 +1,12 @@
 ﻿namespace PDD.EfDal
 {
-    public class BaseRepository
+    public abstract class BaseRepository
     {
-        public PddDbContext context;
+        protected readonly PddDbContext Context;
 
-        public BaseRepository()
+        protected BaseRepository()
         {
-            this.context = new PddDbContext();
+            Context = new PddDbContext();
         }
     }
 }
