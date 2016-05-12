@@ -58,21 +58,21 @@ namespace PDD.Client
                 Name = "Все автобусы.",
                 Right = false,
                 QuestionId = questionIds[0],
-                id = 1
+                Id = 1
             };
             var answer2 = new Answer
             {
                 Name = "Автобусы, троллейбусы и трамваи, предназначенные для перевозки людей и движущиеся по установленному маршруту с обозначенными местами остановок.",
                 Right = true,
                 QuestionId = questionIds[0],
-                id = 2
+                Id = 2
             };
             var answer3 = new Answer
             {
                 Name = "Любые транспортные средства, перевозящие пассажиров.",
                 Right = false,
                 QuestionId = questionIds[0],
-                id = 3
+                Id = 3
             };
 
             var question1 = new Question
@@ -92,21 +92,21 @@ namespace PDD.Client
                 Name = "Запрещает дальнейшее движение.",
                 Right = false,
                 QuestionId = questionIds[1],
-                id = 4
+                Id = 4
             };
             var answer22 = new Answer
             {
                 Name = "Автобусы, троллейбусы и трамваи, предназначенные для перевозки людей и движущиеся по установленному маршруту с обозначенными местами остановок.",
                 Right = true,
                 QuestionId = questionIds[1],
-                id = 5
+                Id = 5
             };
             var answer23 = new Answer
             {
                 Name = "Любые транспортные средства, перевозящие пассажиров.",
                 Right = false,
                 QuestionId = questionIds[1],
-                id = 6
+                Id = 6
             };
 
             var question2 = new Question
@@ -219,21 +219,21 @@ namespace PDD.Client
 				Name = "Все автобусы.",
 				Right = false,
 				//QuestionId = questionIds[0],
-				id = 1
+				Id = 1
 			};
 			var answer2 = new Answer
 			{
 				Name = "Автобусы, троллейбусы и трамваи, предназначенные для перевозки людей и движущиеся по установленному маршруту с обозначенными местами остановок.",
 				Right = true,
 				//QuestionId = questionIds[0],
-				id = 2
+				Id = 2
 			};
 			var answer3 = new Answer
 			{
 				Name = "Любые транспортные средства, перевозящие пассажиров.",
 				Right = false,
 				//QuestionId = questionIds[0],
-				id = 3
+				Id = 3
 			};
 
 			var question1 = new Question
@@ -253,21 +253,21 @@ namespace PDD.Client
 				Name = "Запрещает дальнейшее движение.",
 				Right = false,
 				//QuestionId = questionIds[1],
-				id = 4
+				Id = 4
 			};
 			var answer22 = new Answer
 			{
 				Name = "Автобусы, троллейбусы и трамваи, предназначенные для перевозки людей и движущиеся по установленному маршруту с обозначенными местами остановок.",
 				Right = true,
 				//QuestionId = questionIds[1],
-				id = 5
+				Id = 5
 			};
 			var answer23 = new Answer
 			{
 				Name = "Любые транспортные средства, перевозящие пассажиров.",
 				Right = false,
 				//QuestionId = questionIds[1],
-				id = 6
+				Id = 6
 			};
 
 			var question2 = new Question

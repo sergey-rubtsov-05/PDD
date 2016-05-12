@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PDD.DataModel.Entity
 {
-    public class Test
+    public class Test : Entity
     {
-        public int Id { get; set; }
         public string Description { get; set; }
         public List<Question> Questions { get; set; } 
     }
