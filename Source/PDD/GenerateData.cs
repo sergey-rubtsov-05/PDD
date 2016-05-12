@@ -285,7 +285,7 @@ namespace PDD.Client
 			var test = new Test
 			{
 				Description = "Тест",
-				//id = testIds[0],
+				//Id = testIds[0],
 				Questions = new List<Question>
 				{
 					question1, question2
