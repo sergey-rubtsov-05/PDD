@@ -8,6 +8,6 @@ namespace PDD.DataModel.Entity
         public string Name { get; set; }
         public int QuestionId { get; set; }
         public virtual Question Question { get; set; }
-        public int Right { get; set; }
+        public bool Right { get; set; }
     }
 }

@@ -5,7 +5,7 @@ namespace PDD.Client
     public class AnswerViewModel: ViewModelBase
     {
         private string _name;
-        private int _right;
+        private bool _right;
         public string Name
         {
             get { return _name; }
@@ -16,7 +16,7 @@ namespace PDD.Client
             }
         }
 
-        public int Right
+        public bool Right
         {
             get { return _right; }
             set

@@ -81,9 +81,9 @@ namespace PDD.Client
             }
         }
 
-        private int _right;
+        private bool _right;
 
-        public int Right
+        public bool Right
         {
             get { return _right; }
             set
@@ -106,7 +106,7 @@ namespace PDD.Client
                         Right = Right
                     });
                     AnswerName = string.Empty;
-                    Right = 0;
+                    Right = false;
                 });
             }
         }
