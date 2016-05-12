@@ -53,7 +53,7 @@
                     <TextBlock Text="Наименование" Grid.Row="0" Grid.Column="0" />
                     <TextBlock Text="Правильный" Grid.Row="0" Grid.Column="1" />
                     <TextBox Name="AnswerName" Text="{Binding AnswerName}" Grid.Row="1" Grid.Column="0" />
-                    <TextBox Name="Right" Text="{Binding Right}" Grid.Row="1" Grid.Column="1" />
+                    <CheckBox Name="Right" IsChecked="{Binding Right}" Grid.Row="1" Grid.Column="1" />
                     <Button  Content="Добавить"  Command="{Binding AddAnswer}" Grid.Row="1" Grid.Column="2" />
                 </Grid>
             </GroupBox>
