@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using System.Windows.Input;
@@ -8,8 +9,6 @@ namespace PDD.Client
 	public class PassExamViewModel:ViewModelBase
 	{
 		public List<QuestionViewModel> Questions { get; set; }
-
-		public List<QuestionViewModel> AnsweredQuestions { get; set; }
 
 		private QuestionViewModel _currentQuestion;
 		public QuestionViewModel CurrentQuestion
@@ -31,9 +30,12 @@ namespace PDD.Client
 			{
 				return new RelayCommand(() =>
 				{
-					AnsweredQuestions.Add(_currentQuestion);
-					Questions.Remove(_currentQuestion);
-					//if (Questions != null)
+					var item = Questions.FirstOrDefault(q => q.Name == _currentQuestion.Name);
+					if (item != null)
+					{
+						item.SelectedAnswer = _currentQuestion.SelectedAnswer;
+					}
+					_currentQuestion = Questions.FirstOrDefault(q => q.SelectedAnswer == null);
 				});
 			}
 		} 
