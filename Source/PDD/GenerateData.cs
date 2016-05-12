@@ -292,7 +292,7 @@ namespace PDD.Client
 				}
 			};
 
-			var repository = new TestRepository();
+			var repository = new Repository<Test>();
 			repository.Save(test);
 		}
     }

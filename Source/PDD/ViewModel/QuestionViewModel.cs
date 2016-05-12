@@ -54,7 +54,7 @@ namespace PDD.Client
                         Name = x.Name,
                         Right = x.Right
                     }).ToList();
-                    var repository = new QuestionRepository();
+                    var repository = new Repository<Question>();
                     repository.Save(new Question
                     {
                         Name = Name,

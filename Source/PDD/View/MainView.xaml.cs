@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Data.Entity;
 using System.Linq;
 using System.Windows;
+using PDD.DataModel.Entity;
 using PDD.EfDal;
 
 namespace PDD.Client
@@ -22,7 +23,7 @@ namespace PDD.Client
         private void PassExam_OnClick(object sender, RoutedEventArgs e)
         {
 			PassExamView card = new PassExamView();
-			var repository = new QuestionRepository();
+			var repository = new Repository<Question>();
 	        var questions = repository.GetList().ToList();
 			var list = questions.Select(q=> new QuestionViewModel
 			{
