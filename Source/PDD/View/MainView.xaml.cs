@@ -15,8 +15,8 @@ namespace PDD.Client
         public MainView()
         {
             InitializeComponent();
-            Database.SetInitializer(new DropCreateDatabaseAlways<PddDbContext>());
-			GenerateData.AddDataToDatabase();
+            //Database.SetInitializer(new DropCreateDatabaseAlways<PddDbContext>());
+			//GenerateData.AddDataToDatabase();
         }
 
         private void PassExam_OnClick(object sender, RoutedEventArgs e)
