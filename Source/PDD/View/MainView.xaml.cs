@@ -23,7 +23,7 @@ namespace PDD.Client
         private void PassExam_OnClick(object sender, RoutedEventArgs e)
         {
 			PassExamView card = new PassExamView();
-			var repository = IocContainer.Instance.Container.Resolve<IGenericRepository<Question>>();
+			var repository = IocContainer.Instance.Container.Resolve<IRepository<Question>>();
 	        var questions = repository.GetList().ToList();
 			var list = questions.Select(q=> new QuestionViewModel
 			{

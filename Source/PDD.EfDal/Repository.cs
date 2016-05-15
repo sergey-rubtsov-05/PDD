@@ -4,7 +4,7 @@ using PDD.DataModel.Entity;
 
 namespace PDD.EfDal
 {
-    public class Repository<TEntity> : BaseRepository, IGenericRepository<TEntity> where TEntity : Entity
+    public class Repository<TEntity> : BaseRepository, IRepository<TEntity> where TEntity : Entity
     {
         public IQueryable<TEntity> GetList()
         {

@@ -54,7 +54,7 @@ namespace PDD.Client
                         Name = x.Name,
                         Right = x.Right
                     }).ToList();
-                    var repository = IocContainer.Instance.Container.Resolve<IGenericRepository<Question>>();
+                    var repository = IocContainer.Instance.Container.Resolve<IRepository<Question>>();
                     repository.Save(new Question
                     {
                         Name = Name,

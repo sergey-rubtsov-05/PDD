@@ -15,7 +15,7 @@ namespace PDD.Infrastructure
         {
             var builder = new ContainerBuilder();
             builder.RegisterGeneric(typeof (Repository<>))
-                .As(typeof (IGenericRepository<>))
+                .As(typeof (IRepository<>))
                 .InstancePerLifetimeScope();
             Container = builder.Build();
         }

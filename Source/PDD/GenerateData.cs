@@ -296,7 +296,7 @@ namespace PDD.Client
 				}
 			};
 
-			var repository = IocContainer.Instance.Container.Resolve<IGenericRepository<Test>>();
+			var repository = IocContainer.Instance.Container.Resolve<IRepository<Test>>();
 			repository.Save(test);
 		}
     }
