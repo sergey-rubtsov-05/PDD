@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Xml.Serialization;
 using PDD.DataModel.Entity;
@@ -8,9 +9,10 @@ namespace PDD.Client
 {
     public class GenerateData
     {
+/*
         public static void GenerateForDb()
         {
-            PddDbContext context = new PddDbContext();
+            var context = new PddDbContext();
             context.Persons.Add(new Person
             {
                 LastName = "Петров",
@@ -48,6 +50,7 @@ namespace PDD.Client
             });
             context.SaveChanges();
         }
+*/
         private static void GenerateForXML()
         {
             var testIds = new List<int> { 1, 2 };

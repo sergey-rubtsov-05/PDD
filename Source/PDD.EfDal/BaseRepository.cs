@@ -1,4 +1,6 @@
-﻿namespace PDD.EfDal
+﻿using System.Configuration;
+
+namespace PDD.EfDal
 {
     public abstract class BaseRepository
     {
@@ -6,7 +8,7 @@
 
         protected BaseRepository()
         {
-            Context = new PddDbContext();
+            Context = new PddDbContext(ConfigurationManager.ConnectionStrings["PddDbContext"].ConnectionString);
         }
     }
 }
