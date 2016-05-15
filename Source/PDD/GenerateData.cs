@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
 using System.Xml.Serialization;
+using Autofac;
 using PDD.DataModel.Entity;
 using PDD.EfDal;
+using PDD.Infrastructure;
 
 namespace PDD.Client
 {
@@ -295,7 +296,7 @@ namespace PDD.Client
 				}
 			};
 
-			var repository = new Repository<Test>();
+			var repository = IocContainer.Instance.Container.Resolve<IGenericRepository<Test>>();
 			repository.Save(test);
 		}
     }

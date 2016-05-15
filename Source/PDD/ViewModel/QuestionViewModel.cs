@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
+using Autofac;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using PDD.DataModel.Entity;
 using PDD.EfDal;
+using PDD.Infrastructure;
 
 namespace PDD.Client
 {
@@ -52,7 +54,7 @@ namespace PDD.Client
                         Name = x.Name,
                         Right = x.Right
                     }).ToList();
-                    var repository = new Repository<Question>();
+                    var repository = IocContainer.Instance.Container.Resolve<IGenericRepository<Question>>();
                     repository.Save(new Question
                     {
                         Name = Name,

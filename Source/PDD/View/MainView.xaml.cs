@@ -1,8 +1,10 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
+using Autofac;
 using PDD.DataModel.Entity;
 using PDD.EfDal;
+using PDD.Infrastructure;
 
 namespace PDD.Client
 {
@@ -21,7 +23,7 @@ namespace PDD.Client
         private void PassExam_OnClick(object sender, RoutedEventArgs e)
         {
 			PassExamView card = new PassExamView();
-			var repository = new Repository<Question>();
+			var repository = IocContainer.Instance.Container.Resolve<IGenericRepository<Question>>();
 	        var questions = repository.GetList().ToList();
 			var list = questions.Select(q=> new QuestionViewModel
 			{
