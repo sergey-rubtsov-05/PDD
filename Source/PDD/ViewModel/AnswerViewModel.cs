@@ -25,5 +25,7 @@ namespace PDD.Client
                 RaisePropertyChanged(() => Right);
             }
         }
+
+	    public bool Selected { get; set; }
     }
 }
