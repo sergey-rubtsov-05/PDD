@@ -3,7 +3,7 @@ using System.Linq;
 using System.Windows;
 using Autofac;
 using PDD.DataModel.Entity;
-using PDD.EfDal;
+using PDD.DAL;
 using PDD.Infrastructure;
 
 namespace PDD.Client

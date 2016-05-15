@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using PDD.DAL;
 using PDD.EfDal;
 
 namespace PDD.Infrastructure

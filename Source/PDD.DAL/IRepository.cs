@@ -1,7 +1,7 @@
 using System.Linq;
 using PDD.DataModel.Entity;
 
-namespace PDD.EfDal
+namespace PDD.DAL
 {
     public interface IRepository<TEntity> where TEntity : Entity
     {

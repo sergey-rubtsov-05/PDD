@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7A0DB09-4240-4D8B-980C-642A9528BA48}</ProjectGuid>
+    <ProjectGuid>{3A36645C-956B-47A0-8407-CF294FED41DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PDD.Infrastructure</RootNamespace>
-    <AssemblyName>PDD.Infrastructure</AssemblyName>
+    <RootNamespace>PDD.DAL</RootNamespace>
+    <AssemblyName>PDD.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,24 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IocContainer.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PDD.DAL\PDD.DAL.csproj">
-      <Project>{3a36645c-956b-47a0-8407-cf294fed41dc}</Project>
-      <Name>PDD.DAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PDD.DataModel\PDD.DataModel.csproj">
       <Project>{fde59ecc-4bfb-471d-8ea5-f42b45efde7d}</Project>
       <Name>PDD.DataModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PDD.EfDal\PDD.EfDal.csproj">
-      <Project>{4a402d7d-e16b-436c-bf01-ec724b956859}</Project>
-      <Name>PDD.EfDal</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

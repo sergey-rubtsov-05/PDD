@@ -7,7 +7,7 @@ using Autofac;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using PDD.DataModel.Entity;
-using PDD.EfDal;
+using PDD.DAL;
 using PDD.Infrastructure;
 
 namespace PDD.Client

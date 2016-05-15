@@ -142,13 +142,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PDD.DAL\PDD.DAL.csproj">
+      <Project>{3a36645c-956b-47a0-8407-cf294fed41dc}</Project>
+      <Name>PDD.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PDD.DataModel\PDD.DataModel.csproj">
       <Project>{fde59ecc-4bfb-471d-8ea5-f42b45efde7d}</Project>
       <Name>PDD.DataModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PDD.EfDal\PDD.EfDal.csproj">
-      <Project>{4a402d7d-e16b-436c-bf01-ec724b956859}</Project>
-      <Name>PDD.EfDal</Name>
     </ProjectReference>
     <ProjectReference Include="..\PDD.Infrastructure\PDD.Infrastructure.csproj">
       <Project>{d7a0db09-4240-4d8b-980c-642a9528ba48}</Project>

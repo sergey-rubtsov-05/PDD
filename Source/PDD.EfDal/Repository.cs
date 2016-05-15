@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Linq;
 using PDD.DataModel.Entity;
+using PDD.DAL;
 
 namespace PDD.EfDal
 {
