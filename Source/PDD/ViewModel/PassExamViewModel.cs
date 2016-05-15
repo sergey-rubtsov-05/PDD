@@ -24,18 +24,29 @@ namespace PDD.Client
 			}
 		}
 
+		private int _currentQuestionNumber;
+		public int CurrentQuestionNumber
+		{
+			get
+			{
+				return _currentQuestionNumber+1;
+			}
+			set
+			{
+				_currentQuestionNumber = value;
+				RaisePropertyChanged(() => CurrentQuestionNumber);
+			}
+		}
+
 		public ICommand NextQuestion
 		{
 			get
 			{
 				return new RelayCommand(() =>
 				{
-					var item = Questions.FirstOrDefault(q => q.Name == _currentQuestion.Name);
-					if (item != null)
-					{
-						item.SelectedAnswer = _currentQuestion.SelectedAnswer;
-					}
-					_currentQuestion = Questions.FirstOrDefault(q => q.SelectedAnswer == null);
+					Questions[_currentQuestionNumber] = _currentQuestion;
+					_currentQuestionNumber = _currentQuestionNumber + 1;
+					CurrentQuestion = Questions[_currentQuestionNumber];
 				});
 			}
 		} 

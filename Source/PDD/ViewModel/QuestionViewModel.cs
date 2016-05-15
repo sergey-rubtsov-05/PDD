@@ -38,8 +38,6 @@ namespace PDD.Client
             }
         }
 
-		public AnswerViewModel SelectedAnswer {get;set;}
-
         public ObservableCollection<AnswerViewModel> Answers { get; set; }
 
         private ICommand _save;

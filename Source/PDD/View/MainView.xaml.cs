@@ -35,7 +35,8 @@ namespace PDD.Client
 			PassExamViewModel viewModel = new PassExamViewModel
 			{
 				Questions = list.ToList(),
-				CurrentQuestion = list.FirstOrDefault()
+				CurrentQuestion = list.FirstOrDefault(),
+				CurrentQuestionNumber = 0
 			};
 	        card.DataContext = viewModel;
 	        card.ShowDialog();
