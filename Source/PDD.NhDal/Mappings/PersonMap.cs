@@ -1,7 +1,7 @@
 ﻿using FluentNHibernate.Mapping;
 using PDD.DataModel.Entity;
 
-namespace PDD.NhDal
+namespace PDD.NhDal.Mappings
 {
     public class PersonMap : ClassMap<Person>
     {
@@ -11,7 +11,7 @@ namespace PDD.NhDal
             Map(x => x.FirstName);
             Map(x => x.LastName);
             Map(x => x.Patronymic);
-            Table("Persons");
+            Table("People");
         }
     }
 }

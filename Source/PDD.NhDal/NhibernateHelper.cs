@@ -5,7 +5,7 @@ using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Tool.hbm2ddl;
-using PDD.DataModel.Entity;
+using PDD.NhDal.Mappings;
 using Configuration = NHibernate.Cfg.Configuration;
 
 namespace PDD.NhDal
@@ -24,7 +24,7 @@ namespace PDD.NhDal
                         .Database(
                             SQLiteConfiguration.Standard.ConnectionString(
                                 ConnectionString))
-                        .Mappings(m => m.FluentMappings.AddFromAssembly(typeof (Repository<>).Assembly))
+                        .Mappings(m => m.FluentMappings.AddFromAssembly(typeof (TestMap).Assembly))
                         .ExposeConfiguration(BuildSchema)
                         .BuildSessionFactory();
                 }

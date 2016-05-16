@@ -4,7 +4,7 @@ namespace PDD.DataModel.Entity
 {
     public class Test : Entity
     {
-        public string Description { get; set; }
-        public List<Question> Questions { get; set; } 
+        public virtual string Description { get; set; }
+        public virtual IList<Question> Questions { get; set; } 
     }
 }

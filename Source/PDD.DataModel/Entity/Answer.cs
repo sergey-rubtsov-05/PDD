@@ -2,9 +2,9 @@
 {
     public class Answer : Entity
     {
-        public string Name { get; set; }
-        public int QuestionId { get; set; }
+        public virtual string Name { get; set; }
+        public virtual int QuestionId { get; set; }
         public virtual Question Question { get; set; }
-        public bool Right { get; set; }
+        public virtual bool Right { get; set; }
     }
 }

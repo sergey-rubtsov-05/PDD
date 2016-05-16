@@ -14,7 +14,7 @@ namespace PDD.Infrastructure
         private IocContainer()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterGeneric(typeof (EfDal.Repository<>))
+            builder.RegisterGeneric(typeof (NhDal.Repository<>))
                 .As(typeof (IRepository<>))
                 .InstancePerLifetimeScope();
             Container = builder.Build();
