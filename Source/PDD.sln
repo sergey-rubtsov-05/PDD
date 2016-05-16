@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDD.Infrastructure", "PDD.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDD.DAL", "PDD.DAL\PDD.DAL.csproj", "{3A36645C-956B-47A0-8407-CF294FED41DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDD.NhDal", "PDD.NhDal\PDD.NhDal.csproj", "{2BAD086C-8901-484C-A72C-57F776F8B72D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3A36645C-956B-47A0-8407-CF294FED41DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A36645C-956B-47A0-8407-CF294FED41DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A36645C-956B-47A0-8407-CF294FED41DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BAD086C-8901-484C-A72C-57F776F8B72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAD086C-8901-484C-A72C-57F776F8B72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAD086C-8901-484C-A72C-57F776F8B72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAD086C-8901-484C-A72C-57F776F8B72D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

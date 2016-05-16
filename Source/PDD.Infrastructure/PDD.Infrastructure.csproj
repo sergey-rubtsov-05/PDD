@@ -63,6 +63,10 @@
       <Project>{4a402d7d-e16b-436c-bf01-ec724b956859}</Project>
       <Name>PDD.EfDal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PDD.NhDal\PDD.NhDal.csproj">
+      <Project>{2bad086c-8901-484c-a72c-57f776f8b72d}</Project>
+      <Name>PDD.NhDal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

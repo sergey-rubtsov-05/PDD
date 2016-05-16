@@ -1,7 +1,6 @@
 ﻿using System;
 using Autofac;
 using PDD.DAL;
-using PDD.EfDal;
 
 namespace PDD.Infrastructure
 {
@@ -15,7 +14,7 @@ namespace PDD.Infrastructure
         private IocContainer()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterGeneric(typeof (Repository<>))
+            builder.RegisterGeneric(typeof (EfDal.Repository<>))
                 .As(typeof (IRepository<>))
                 .InstancePerLifetimeScope();
             Container = builder.Build();
