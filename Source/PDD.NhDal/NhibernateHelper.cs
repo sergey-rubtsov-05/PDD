@@ -24,7 +24,8 @@ namespace PDD.NhDal
                         .Database(
                             SQLiteConfiguration.Standard.ConnectionString(
                                 ConnectionString))
-                        .Mappings(m => m.FluentMappings.AddFromAssembly(typeof (TestMap).Assembly))
+                        .Mappings(m => m.FluentMappings
+                            .AddFromAssembly(typeof(TestMap).Assembly))
                         .ExposeConfiguration(BuildSchema)
                         .BuildSessionFactory();
                 }
@@ -35,10 +36,8 @@ namespace PDD.NhDal
         private static void BuildSchema(Configuration config)
         {
             var dbFile = new SQLiteConnectionStringBuilder(ConnectionString).DataSource;
-            if (File.Exists(dbFile))
-                File.Delete(dbFile);
-
-            new SchemaExport(config).Create(false, true);
+            if (!File.Exists(dbFile))
+                new SchemaExport(config).Create(false, true);
         }
 
         public static ISession OpenSession()

@@ -48,6 +48,10 @@
       <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Inflector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Inflector.1.0.0.0\lib\net45\Inflector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
       <Private>True</Private>
@@ -80,6 +84,8 @@
     <Compile Include="Mappings\PersonMap.cs" />
     <Compile Include="Mappings\QuestionMap.cs" />
     <Compile Include="Mappings\TestMap.cs" />
+    <Compile Include="Mappings\TestResultItemMap.cs" />
+    <Compile Include="Mappings\TestResultMap.cs" />
     <Compile Include="NhibernateHelper.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,8 +101,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

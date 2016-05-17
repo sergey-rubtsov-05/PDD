@@ -1,4 +1,5 @@
 using FluentNHibernate.Mapping;
+using Inflector;
 using PDD.DataModel.Entity;
 
 namespace PDD.NhDal.Mappings
@@ -7,11 +8,11 @@ namespace PDD.NhDal.Mappings
     {
         public AnswerMap()
         {
+            Table(nameof(Answer).Pluralize());
             Id(c => c.Id);
             Map(c => c.Name);
-            References(c => c.Question);
+            References(c => c.Question).Column(nameof(Answer.Question) + "Id");
             Map(c => c.Right);
-            Table("Answers");
         }
     }
 }
